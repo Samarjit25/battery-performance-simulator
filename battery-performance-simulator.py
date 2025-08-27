@@ -1,5 +1,4 @@
-# Battery Performance Simulator (SoC, voltage, temperature, fade)
-# Run: python battery_simulator.py
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -70,3 +69,4 @@ plt.subplot(3,1,3); plt.plot(t/60, temp_hist, label="Temp (°C)")
 plt.plot(t/60, np.array(fade_hist), label="Fade (%)")
 plt.xlabel("Time (min)"); plt.legend(); plt.grid(True)
 plt.tight_layout(); plt.show()
+
